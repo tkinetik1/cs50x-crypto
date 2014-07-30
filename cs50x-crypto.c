@@ -32,37 +32,34 @@ int main(int argc, string argv[])
     for (int i = 0, n = strlen(s); i < n; i++)
     {
         isall(s[i]);
-	    if ((isupper(s[i])))
-	    {   
-	        if ((isupper(s[i] + k)))
-	        {
-	            printf("%c", (s[i] + k));
-	        }
-	    
-	        else
-	        {
-	            printf("%c", ((((s[i] + k) - 65) % 26)+ 65));
-	        }
-	        
-	        
+	if ((isupper(s[i])))
+	{   
+	    if ((isupper(s[i] + k)))
+	    {
+	        printf("%c", (s[i] + k));
 	    }
 	    
-	    if ((islower(s[i])))
+	    else
 	    {
-	        if ((islower(s[i] + k)))
-	        {
-	            printf("%c", (s[i] + k));
-	        }
+	        printf("%c", ((((s[i] + k) - 65) % 26)+ 65));
+	    }
+	}
 	    
-	        else
-	        {
-	            printf("%c", ((((s[i] + k) - 97) % 26)+ 97));
-	        }
+	if ((islower(s[i])))
+	{
+	    if ((islower(s[i] + k)))
+	    {
+	        printf("%c", (s[i] + k));
+	    }
+	    
+	    else
+	    {
+	        printf("%c", ((((s[i] + k) - 97) % 26)+ 97));
+	    }
         }
+        
     }
     
     printf("\n");
     return 0;
 }
-
-
