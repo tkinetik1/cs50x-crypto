@@ -1,3 +1,5 @@
+// Tyson Frederick - cs50x's Problem Set 2 - 7/29/14 (final push)
+
 #include <stdio.h>
 #include <string.h>
 #include <cs50.h>
